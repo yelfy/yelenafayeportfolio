@@ -1,0 +1,63 @@
+.about{
+    max-width: 1200px;
+    margin: auto;
+}
+h2{
+    margin: 0;
+    padding: 36px 0 10px;
+}
+
+.about-img{
+    width: 30%;
+}
+.about-description{
+    width: 70%;
+    font-size: 26px;
+}
+
+
+.about-content {
+    display: flex;
+    gap: 10%;
+    padding: 20px 0;
+}
+
+.resume-btn{
+    background-color: #7C8033;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 6px;
+    border: 0;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.skill-set-softwares{
+    width: 50%;
+    font-size: 24px;
+}
+.about-resume-btn{
+    width: 50%;
+}
+
+@media (max-width: 700px){
+    .about-content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-img, .about-description{
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    .about{
+        padding: 20px;
+    }
+    .skill-set-softwares, .about-resume-btn{
+        width: 100%;
+    }
+    .resume-btn{
+        width: 100%;
+        text-align: center;
+    }
+}

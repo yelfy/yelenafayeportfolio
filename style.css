@@ -1,0 +1,263 @@
+*{
+  /* font-family: "Source Sans 3", sans-serif; */
+  /* font-family: "Caveat", cursive; */
+
+  /* font-weight: 600; */
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #34350f;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+
+/* header */
+#header {
+  /* background-color: #34350f; */
+  padding-bottom: 20px;
+}
+
+.header-content {
+  display: block;
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.header-title {
+  margin: 0;
+  color: #c6cc82;
+  text-align: center;
+  padding: 5px 0;
+  position: relative;
+  display: inline-block;
+  margin-top: auto;
+  padding-bottom: 10px;
+  width: 200px;
+}
+.yelena-faye-logo {
+  width: 50px;
+  display: inline;
+  padding: 10px 10px;
+}
+
+.header-nav {
+  position: relative;
+  transition: left 0.5s ease;
+  display: inline-flex;
+  flex: 1;
+  justify-content: end;
+}
+
+.header-nav-links {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0px 10% 10px;
+  list-style-type: none;
+  margin: 0;
+  /* box-shadow: 0px 2px 4px #0202025e; */
+  gap: 30px;
+  align-self: end;
+}
+
+.header-nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 26px;
+}
+
+.hamburger-container {
+  display: none;
+  justify-content: end;
+}
+
+.hamburger {
+  display: inline-block;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.hamburger span {
+  display: block;
+  width: 30px;
+  height: 4px;
+  margin: 5px 0;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+  border-radius: 50px;
+}
+.hamburger-close-btn {
+  display: none;
+}
+
+/* main section */
+main {
+  background-color: #dbd5c5;
+  /* max-width: 1200px; */
+  margin: auto;
+  /* padding-bottom: 10px; */
+  /* min-height: 87vh; */
+}
+
+.page-title {
+  margin: 0;
+  text-align: center;
+  padding: 20px;
+  font-size: 80px;
+}
+
+.portfolio-projects-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.page-section {
+  /* background-color: #3c3d17; */
+  padding: 20px 70px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  color: #c6cc82;
+  max-width: 1200px;
+}
+
+.section-description,
+.section-title .portfolio-item {
+  overflow: hidden;
+}
+
+.portfolio-projects {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+
+  /* Hide scrollbar */
+  scrollbar-width: none;
+  justify-content: space-between;
+  row-gap: 30px;
+}
+
+.project {
+  max-width: 48%;
+  row-gap: 2%;
+  text-decoration: none;
+}
+
+.project > p {
+  font-size: 25px;
+  color: black;
+}
+
+.project img {
+  width: 100%;
+}
+
+.portfolio-projects-container button img {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  background: white;
+  border: 3px solid white;
+  border-radius: 14px;
+}
+.portfolio-projects-container button {
+  height: fit-content;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  background: #fff0;
+  border: 0;
+}
+
+
+
+
+
+.footer-logo{
+  width: 300px;
+  max-width: 100%;
+  margin: auto;
+  display: block;
+}
+
+#footer{
+padding: 20px;
+}
+
+
+.footer-phone-number{
+  border-bottom: 2px solid #ffffff;
+  display: block;
+  margin: auto;
+  padding: 6px 39px;
+  margin-top: 20px;
+  width: fit-content;
+  font-size: 20px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+@media (max-width: 700px) {
+  /* mobile nav  */
+  .header-nav-links {
+    flex-direction: column;
+    padding: 0 0;
+    text-align: center;
+    justify-content: center;
+    gap: 30px;
+    font-size: 36px;
+    height: 100%;
+    margin: auto;
+  }
+
+  .header-nav {
+    left: -150vw;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    background: #3c3d17;
+    top: 0;
+
+    position: absolute;
+  }
+
+  .header-nav.active {
+    left: 0;
+  }
+
+  .page-section {
+    padding: 20px 10px 20px;
+  }
+
+  .hamburger-container {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .hamburger {
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .hamburger-close-btn {
+    display: block;
+    position: absolute;
+    top: -8px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 60px;
+  }
+}

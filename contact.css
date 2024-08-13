@@ -1,0 +1,98 @@
+.contact {
+  margin: auto;
+  max-width: 1200px;
+  min-height: 500px;
+  padding-top: 100px;
+  padding: 40px 40px 150px;
+}
+.contact p {
+  width: 50%;
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  margin-top: 70px;
+}
+
+main {
+  /* background-color: white !important; */
+}
+
+/* send email form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 1000px;
+  width: 100%;
+  /* margin: 0 auto; */
+  font-size: 30px;
+}
+
+input,
+textarea {
+  max-width: 100% !important;
+  min-width: 100%;
+  padding: 8px;
+  outline: none;
+  width: 100% !important;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+input,
+textarea {
+  border-radius: 0px;
+  border: 0;
+  border-bottom: 1px solid rgb(129 136 138);
+  margin-bottom: 10px;
+}
+
+.social-media {
+  width: 30px;
+  margin-right: 20px;
+}
+.socials {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 30px;
+}
+
+.socials a {
+  text-decoration: none;
+  color: rgb(20 112 175);
+  border-bottom: 2px solid rgb(20 112 175);
+}
+.submit-form-btn {
+  background-color: white;
+  margin-left: auto;
+  padding: 14px 100px;
+}
+
+.email-form-header {
+  padding-bottom: 30px;
+}
+
+.form-button {
+  width: fit-content;
+  padding: 15px 100px;
+  color: #1470af;
+  font-size: 24px;
+  border: 3px solid #1470af;
+  color: #1470af;
+  border-radius: 100px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: transparent;
+}
+.form-button:hover{
+  color: white;
+  background-color: #1470af;
+
+}

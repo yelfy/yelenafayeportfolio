@@ -1,0 +1,151 @@
+.page-title {
+  margin: 0;
+  text-align: center;
+  padding: 20px;
+  font-size: 80px;
+}
+
+.portfolio-projects-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.page-section {
+  /* background-color: #3c3d17; */
+  padding: 20px 70px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-bottom: 80px; */
+  color: #c6cc82;
+  max-width: 1200px;
+}
+
+.section-description,
+.section-title .portfolio-item {
+  overflow: hidden;
+}
+
+.portfolio-projects {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+
+  /* Hide scrollbar */
+  scrollbar-width: none;
+  justify-content: space-between;
+  row-gap: 30px;
+}
+
+.project {
+  max-width: 48%;
+  row-gap: 2%;
+  text-decoration: none;
+}
+
+.project > p {
+  font-size: 36px;
+  color: black;
+  font-weight: 500;
+}
+
+.project img {
+  width: 100%;
+}
+
+.portfolio-projects-container button img {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  background: white;
+  border: 3px solid white;
+  border-radius: 14px;
+}
+.portfolio-projects-container button {
+  height: fit-content;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  background: #fff0;
+  border: 0;
+}
+
+.intro {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  gap: 100px;
+  align-items: center;
+}
+
+.intro-description-container {
+  width: 50%;
+  display: inline-block;
+}
+.i-am-a {
+  width: 45%;
+  display: inline-block;
+  height: max-content;
+}
+
+.intro-description {
+  /* font: menu; */
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 19px;
+  color: #ffffff;
+  font-family: monospace;
+}
+.intro-container {
+  background: #34350f;
+}
+
+
+
+
+
+@media (max-width: 700px) {
+  .page-section {
+    padding: 20px 30px 20px;
+  }
+
+  .portfolio-projects-container button {
+    margin: 0;
+    padding: 0;
+  }
+
+  .portfolio-projects {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .portfolio-projects > img {
+    max-width: 90%;
+  }
+  .project {
+    max-width: 100%;
+
+  }
+
+  .intro{
+    flex-direction: column;
+    gap: 0;
+  }
+  .i-am-a{
+    width: 80%;
+    text-align: center;
+    margin-top: 30px;
+  } 
+  .intro-description-container{
+    width: 80%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+}
