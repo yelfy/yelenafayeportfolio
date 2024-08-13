@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta charset="UTF-8" />
+      <meta name="keyword" content="Karla Helen Portfolio Website" />
+      <meta name="description" content="Karla Helen Portfolio Website" />
+      <meta name="author" content="Karla Helen" />
+      <title>Yelena Faye - contact</title>
+
+      <!-- Google Fonts Link -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Zain:wght@200;300;400;700;800;900&display=swap" rel="stylesheet">
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Zain:wght@200;300;400;700;800;900&display=swap" rel="stylesheet">
+
+      <!-- Stylesheet Links -->
+      <link rel="stylesheet" href="/css/style.css" />
+      <link rel="stylesheet" href="/css/contact.css" />
+   </head>
+   <body>
+    <header id="header">
+      <div class="header-content">
+        <img src="./images/letter_logo.png" class="yelena-faye-logo" />
+        <h1 class="header-title">Yelena Faye</h1>
+        <nav class="header-nav">
+          <button class="hamburger-close-btn" id="hamburger-close-btn">
+            &times;
+          </button>
+          <ul class="header-nav-links">
+            <li><a href="/index.html">Work</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="hamburger-container">
+          <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+      <main>
+         <section class="contact">
+            <!-- <img src="./images/send.png" alt="" class="send-img"> -->
+            <h2>Talk to me!</h2>
+            <p>
+               If you have any questions in mind<br />
+               please send me a message <br>
+               I would love to hear from you! <br>
+
+
+            <div class="socials">
+               <a href="mailto:yelenafaye7@gmail.com"
+                  >yelenafaye7@gmail.com</a
+                  >
+            </div>
+
+            <!--            
+            <div class="socials">
+               <img class="social-media" src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/62-instagram-512.png" alt="instagram">
+               <a href="https://www.instagram.com/_________/" target="_blank"
+                  >https://www.instagram.com/_________/</a
+                  >
+            </div> -->
+            </p>
+         
+               <h2 class="email-form-header">Send me a message!!</h2>
+           
+               
+               <form id="emailForm" class="form-container">
+                <label for="name" class="form-label">Your Name:</label>
+                <input type="text" id="name" name="name" class="form-input" required>
+        
+                <label for="senderEmail" class="form-label">Your Email:</label>
+                <input type="email" id="senderEmail" name="senderEmail" class="form-input" required>
+        
+                <label for="subject" class="form-label">Subject:</label>
+                <input type="text" id="subject" name="subject" class="form-input" required>
+        
+                <label for="message" class="form-label">Message:</label>
+                <textarea id="message" name="message" class="form-textarea" rows="6" required></textarea>
+        
+                <button type="button" class="form-button" onclick="sendEmail()">Submit</button>
+            </form>
+        
+            <script>
+                function sendEmail() {
+                    var name = document.getElementById('name').value;
+                    var senderEmail = document.getElementById('senderEmail').value;
+                    var subject = document.getElementById('subject').value;
+                    var message = document.getElementById('message').value;
+                    var receiverEmail = 'hamid_shahabadi@hotmail.com';
+                    
+                    var emailBody = 'Name: ' + encodeURIComponent(name) + '%0D%0A' +
+                                    'Email: ' + encodeURIComponent(senderEmail) + '%0D%0A%0D%0A' +
+                                    encodeURIComponent(message);
+                    var mailtoLink = 'mailto:' + receiverEmail + '?subject=' + encodeURIComponent(subject) + '&body=' + emailBody;
+        
+                    window.location.href = mailtoLink;
+                }
+            </script>
+
+
+
+
+            </div>
+         </section>
+      </main>
+      <!-- footer -->
+      <footer id="footer">
+         <!-- <p>this is the footer</p> -->
+          
+          <a class="footer-phone-number" href="Yelena Faye 2024">Yelena Faye 2024</a>
+   
+       </footer>
+   
+   
+       <script src="main.js"></script>
+     </body>
+   </html>
+   
